@@ -16,6 +16,6 @@ Point to check.ps1.
 
 ## Credits
 
-https://scloud.work/en/my-take-on-win32-apps/
-https://www.nielskok.tech/intune/use-winget-with-intune/
+- https://scloud.work/en/my-take-on-win32-apps/
+- https://www.nielskok.tech/intune/use-winget-with-intune/
 
