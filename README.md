@@ -22,4 +22,5 @@ flowchart TB
     UpdateScriptFolder-->GenerateUpdater("Generate Script that runs updater scripts")
     GenerateUpdater-->GenerateSchTask("Generate Scheduled Task to launch Updater")
     GenerateSchTask-->GenerateIndividualAppUpdater("Generate Script with Package name")
+    GenerateIndividualAppUpdater-->StopTranscript("Transcript Stops")
 ```
