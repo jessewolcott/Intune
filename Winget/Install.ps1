@@ -93,7 +93,7 @@ IF ($PackageName){
         $config
         Set-Location $wingetpath
 
-        .\winget.exe install $PackageName -s $PackageSource --silent --accept-source-agreements --accept-package-agreements --force # 
+        .\winget.exe install $PackageName -s $PackageSource --silent --accept-source-agreements --accept-package-agreements --force 
         
         Write-Output "Checking for update log directory"
         If ((Test-Path ("$Path_local\Updates\")) -eq $false){
@@ -145,7 +145,7 @@ $TaskScript2 = @'
 $UpdateFile = @"
 Start-Transcript -Path "$Env:Programfiles\_MEM\Updates\$PackageName-Update.txt" -Force -Append
 Set-location (Resolve-Path "C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_*_x64__8wekyb3d8bbwe")
-.\winget.exe upgrade $PackageName --silent
+.\winget.exe upgrade $PackageName --source $PackageSource --silent --accept-source-agreements --accept-package-agreements --force
 Stop-Transcript
 "@
         
